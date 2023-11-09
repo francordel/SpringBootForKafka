@@ -16,7 +16,7 @@ import java.util.Map;
 public class KafkaProviderConfig {
     @Value("${spring.kafka.bootstrapServers}")
     private String bootstrapServers;
-    public Map<String, Object> producerConfig(){
+    private Map<String, Object> producerConfig(){
         Map<String, Object> properties = new HashMap<>();
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         //Está en String hay que decirle quien va a serializar esa string
