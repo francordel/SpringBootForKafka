@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.kafka.provider</groupId>
-	<artifactId>SpringBootProvider</artifactId>
+	<artifactId>SpringBootProducer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringBootProvider</name>
 	<description>Spring Boot For Apache Kafka</description>

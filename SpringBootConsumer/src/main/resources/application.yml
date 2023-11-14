@@ -1,0 +1,14 @@
+# Configuration
+server:
+  port: 8081
+spring:
+  application:
+    name: Spring-kafka-consumer
+  # Kafka Configuration
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

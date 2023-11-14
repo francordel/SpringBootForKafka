@@ -12,13 +12,6 @@ public class SpringBootProviderApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootProviderApplication.class, args);
 	}
-	// Cuando se levante la app se va a enviar el mensaje kafka
-	// CommandLineRunner ejecuta el codigo que tiene cuando se levante la app
-	@Bean
-	CommandLineRunner init(KafkaTemplate<String, String > kafkaTemplate){
-		return args -> {
-			kafkaTemplate.send("twitter-Topic", "Finalmente os doy la Bienvenida a mi cuenta de twitter");
-		};
-	}
+
 
 }
