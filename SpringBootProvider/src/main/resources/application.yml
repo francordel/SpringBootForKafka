@@ -1,0 +1,12 @@
+# Configuration
+server:
+  port: 8080
+spring:
+  application:
+    name: Spring-kafka-producer
+  # Kafka Configuration
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
