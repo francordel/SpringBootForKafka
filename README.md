@@ -16,3 +16,6 @@ Run [SpringBootConsumerApplication.java](src/main/java/com/kafka/consumer/Spring
 ### Check everything is correct
 - List Kafka topics
     - bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+### Execute POST operation
+curl -X POST -F 'tweet=ACHO' http://localhost:8080/kafka/tweetear
