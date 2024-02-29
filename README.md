@@ -4,7 +4,7 @@ Demo repo for making a Provider - Consumer in Kafka
 2 Different approach:
 - Use Docker in our project directory
     - docker compose up -d
-- Use commands in terminal in /kafka_2.13-3.6.0/                                                                                                                           ─╯
+- Use commands in terminal in /kafka_2.13-3.6.0/                                                                                                               ─╯
     - Start zookeper
         - bin/zookeeper-server-start.sh config/zookeeper.properties 
         - It starts in port 2181
